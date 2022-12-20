@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:ital,wght@0,400;0,500;0,600;1,600;1,700&family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+
+/* 
+font-family: 'Noto Serif', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+ */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body
+{
+    background-color: rgb(62, 151, 210);
+    overflow-x: hidden;
+}
+header
+{
+    width: 100vw;
+    height: auto;
+    /* position: fixed; */
+    overflow: hidden;
+}
+nav
+{
+    padding: 0.5em;
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+nav h1
+{
+    font-size: 2em;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    background:transparent
+}
+nav ul
+{
+    background-color: white;
+    list-style: none;
+    display: flex;
+    gap:2em;
+    background: transparent;
+}
+
+@media screen and (max-width:580px) {
+    nav ul
+    {
+        overflow-x: scroll;
+    }
+}
+nav ul li
+{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    background: transparent;
+}
+
+@media screen and (max-width:750px) {
+
+    nav
+    {
+        justify-content: center;
+    }
+    
+}
+.hero_section
+{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.Info_section
+{
+    padding: 3em auto;
+    width: 40%;
+    height:auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.Info_section h2
+{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+.Info_section span
+{
+    font-size:1.2em;
+    color: black;
+    font-weight: 800;
+    line-height: 2.5em;
+}
+.Info_section p
+{
+    line-height: 2em;
+}
+.Info_section button
+{
+    padding: 1em 2em;
+    background-color:#0093E9;
+    color: white;
+    font-size: 800;
+    border: none;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.animation_div
+{
+
+    width: 60%;
+    height: inherit;
+}
+
+.big_div {
+    animation-name: moveBig;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    float: right;
+	width: 25rem;
+    height: 25rem;
+	border-radius: 100%;
+    margin-top: 100px;
+    background-color: rgb(16, 135, 239);
+	box-shadow: inset -25px -15px 40px rgba(0,0,0,.3);
+	background-image: linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+}
+.small_div
+{
+    margin-right: 10px;
+    width: 20rem;
+    height: 20rem;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+@keyframes move {
+
+    0%
+    {
+        transform: translate(10px,-10px);
+    }
+    50%
+    {
+        transform: translate(-5px,5px);
+    }
+    100%
+    {
+        transform: translate(-5px,5px);
+    }
+    
+}
+@keyframes moveBig {
+
+    0%
+    {
+        transform: translate(30px,-30px);
+    }
+    50%
+    {
+        transform: translate(-15px,15px);
+    }
+    100%
+    {
+        transform: translate(-15px,15px);
+    }
+    
+}
+
+@media (max-width:1296px)
+{
+    .big_div
+    {
+        width: 15rem;
+        height:
+        15rem;
+    }
+    .small_div
+    {
+        width:10rem;
+        height: 10rem;
+    }
+}
+@media (max-width:711px)
+{
+   .animation_div
+   {
+    display: none;
+   }
+   .Info_section
+   {
+    width: 100%;
+   }
+}
+
+/* .about_section
+{
+    width: 100vw;
+    height: 500px;
+    background-color: white;
+    display: flex;
+}
+.div1
+{
+    width: 50%;
+    padding: 2em;
+}
+.div1 img ,.div2 img
+{
+    display: block;
+    width:50%;
+}
+.info
+{
+    max-height:200px;
+    overflow: hidden;
+    padding: 0.5em;
+    width: 50%;
+    float: right;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.info h2
+{
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+}
+.info p
+{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    
+}
+.div2
+{
+    float: right;
+    width: 50%;
+    padding: 1em;
+} */
+
+.about
+{
+    width: 100vw;
+    height:auto;
+    background-color: white;
+    padding: 2em;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.about h2
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.about p
+{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    font-weight:600;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#Contact
+{
+  width: 100vw;
+  background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+  display: flex;
+  justify-content: center;
+}
+#Contact ul
+{
+  position: relative;
+  list-style: none;
+  width: 90vw;
+  height: auto;
+  display: flex;
+  padding:1em;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+#Contact ul li 
+{
+    padding: 0.5em 1em;
+    border-radius: 1em;
+}
+#Contact ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+#Contact ul li
+{
+  background-color:#0093E9;
+}
+
+footer
+{
+    padding: 2em;
+}
+footer p
+{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-align: center;
+}

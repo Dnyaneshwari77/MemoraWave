@@ -1,0 +1,129 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body
+{
+    overflow-x: hidden ;
+}
+header
+{
+    width: 100vw;
+    background-color:#0F3460 ;
+    min-height: 60px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my_search_bar
+{
+    max-height: 35px;
+    border-radius: 30px;
+}
+
+header nav
+{
+    width: 95%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+header span
+{
+    margin:5px;
+}
+header div
+{
+    margin:5px;
+}
+header nav div img
+{
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}
+header nav div span
+{
+    font-weight: 700;
+    font-size: 1em;
+    border-bottom: 2px solid white;
+}
+main
+{
+    width: 100vw;
+    background-color:#16213E;
+    height: 100vh;
+}
+.body_div
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side_bard
+{
+    width: 30%;
+    height: 100%;
+    color: white;
+}
+.Typing_section
+{
+    width: 70%;
+    background-color: #916BBF;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type_window
+{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 2em;
+    padding: 2em;
+}
+.formating_icon
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.formating_icon span
+{
+    padding: 0.2em 0.5em;
+    background-color: #1C0C5B;
+    border-radius: 0.2em;
+    color: white;
+}
+.Typed_Text 
+{
+    width: 100%;
+    height: 100%;
+}
+.Typed_Text textarea
+{
+    width: 100%;
+    height: 90%;
+    border: 1px solid white; 
+    font-size: 1em;
+    font-weight: 600;
+}
+.Typed_Text textarea:focus
+{
+    border: 1px solid white; 
+}
+.Typed_Text textarea::selection
+{
+    color: white;
+    background-color: #916BBF;
+}
